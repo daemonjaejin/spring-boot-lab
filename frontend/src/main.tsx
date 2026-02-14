@@ -1,0 +1,95 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { AuthProvider, useAuth } from "./auth/AuthContext";
+import AppLayout from "./components/AppLayout";
+import ProtectedRoute from "./components/ProtectedRoute";
+import BatchPage from "./pages/BatchPage";
+import ForbiddenPage from "./pages/ForbiddenPage";
+import LoginPage from "./pages/LoginPage";
+import MemberDetailPage from "./pages/MemberDetailPage";
+import MembersListPage from "./pages/MembersListPage";
+import RegisteredAppDetailPage from "./pages/RegisteredAppDetailPage";
+import RegisteredAppsListPage from "./pages/RegisteredAppsListPage";
+import "./styles.css";
+
+function HomeRedirect() {
+  const { isAuthenticated } = useAuth();
+  return <Navigate replace to={isAuthenticated ? "/members" : "/login"} />;
+}
+
+function AppRoutes() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeRedirect />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/forbidden" element={<ForbiddenPage />} />
+
+        <Route
+          element={
+            <ProtectedRoute>
+              <AppLayout />
+            </ProtectedRoute>
+          }
+        >
+          <Route path="/members" element={<MembersListPage />} />
+          <Route
+            path="/members/new"
+            element={
+              <ProtectedRoute allowedRoles={["ADMIN"]}>
+                <MemberDetailPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/members/me"
+            element={
+              <ProtectedRoute allowedRoles={["ADMIN", "MEMBER"]}>
+                <MemberDetailPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/members/:memberId"
+            element={
+              <ProtectedRoute allowedRoles={["ADMIN", "MEMBER"]}>
+                <MemberDetailPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route path="/apps" element={<RegisteredAppsListPage />} />
+          <Route
+            path="/apps/new"
+            element={
+              <ProtectedRoute allowedRoles={["ADMIN"]}>
+                <RegisteredAppDetailPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/apps/:appId" element={<RegisteredAppDetailPage />} />
+
+          <Route
+            path="/batch"
+            element={
+              <ProtectedRoute allowedRoles={["ADMIN", "MEMBER"]}>
+                <BatchPage />
+              </ProtectedRoute>
+            }
+          />
+        </Route>
+
+        <Route path="*" element={<Navigate replace to="/" />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <AuthProvider>
+      <AppRoutes />
+    </AuthProvider>
+  </React.StrictMode>
+);

@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:13307/test
+    username: root
+    password: admin1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  batch:
+    jdbc:
+      initialize-schema: never
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+
+jwt:
+  secret: ${JWT_SECRET:S8v9xY3qP4rN2bV7kL0tM5uZ1aC6dF8gH3jK9lQ2wE7rT6yU1iO4pV0sX8zA5bC}
+  expiration: 3600000
+
+server:
+  port: 8081

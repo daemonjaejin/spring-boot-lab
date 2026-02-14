@@ -1,0 +1,89 @@
+﻿> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2026-02-13T17:28:58.085+09:00  INFO 45152 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.7 with PID 45152 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+2026-02-13T17:28:58.086+09:00  INFO 45152 --- [           main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2026-02-13T17:28:58.392+09:00  INFO 45152 --- [           main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 1 ms.
+2026-02-13T17:28:58.505+09:00  INFO 45152 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T17:28:58.535+09:00  INFO 45152 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2026-02-13T17:28:58.862+09:00  INFO 45152 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-02-13T17:28:58.867+09:00  INFO 45152 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T17:28:58.867+09:00  INFO 45152 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2026-02-13T17:28:58.922+09:00  INFO 45152 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-13T17:28:58.923+09:00  INFO 45152 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 809 ms
+2026-02-13T17:28:58.992+09:00  INFO 45152 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2026-02-13T17:28:58.992+09:00  INFO 45152 --- [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-02-13T17:28:58.992+09:00  INFO 45152 --- [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-02-13T17:28:58.998+09:00  INFO 45152 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T17:28:59.169+09:00  INFO 45152 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27e44e9c
+2026-02-13T17:28:59.171+09:00  INFO 45152 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T17:28:59.187+09:00  INFO 45152 --- [           main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:13307/test (MySQL 8.0)
+2026-02-13T17:28:59.226+09:00  INFO 45152 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.016s)
+2026-02-13T17:28:59.238+09:00  INFO 45152 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `test`: 4
+2026-02-13T17:28:59.239+09:00  INFO 45152 --- [           main] o.f.core.internal.command.DbMigrate      : Schema `test` is up to date. No migration necessary.
+2026-02-13T17:28:59.282+09:00  INFO 45152 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-13T17:28:59.311+09:00  INFO 45152 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2026-02-13T17:28:59.313+09:00  INFO 45152 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-02-13T17:28:59.400+09:00  INFO 45152 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-02-13T17:28:59.480+09:00  INFO 45152 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T17:28:59.613+09:00  INFO 45152 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-02-13T17:28:59.969+09:00  INFO 45152 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-13T17:28:59.991+09:00  INFO 45152 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T17:29:00.245+09:00  INFO 45152 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2026-02-13T17:29:00.254+09:00  INFO 45152 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2026-02-13T17:29:00.265+09:00  INFO 45152 --- [           main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2026-02-13T17:29:00.269+09:00  INFO 45152 --- [           main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2026-02-13T17:29:00.270+09:00  INFO 45152 --- [           main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2026-02-13T17:29:00.329+09:00  WARN 45152 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T17:29:00.477+09:00  INFO 45152 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@439054a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fc1eee5, org.springframework.security.web.context.SecurityContextHolderFilter@4d21b505, org.springframework.security.web.header.HeaderWriterFilter@366c9912, org.springframework.security.web.authentication.logout.LogoutFilter@f461c9c, com.example.demo.security.JwtAuthenticationFilter@71c1ca1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9fc125b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22db974d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@120661d2, org.springframework.security.web.session.SessionManagementFilter@7ca2319f, org.springframework.security.web.access.ExceptionTranslationFilter@624268ab, org.springframework.security.web.access.intercept.AuthorizationFilter@106387cf]
+2026-02-13T17:29:00.609+09:00  INFO 45152 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-02-13T17:29:00.614+09:00  INFO 45152 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 2.741 seconds (process running for 2.929)
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0 where b1_0.enabled
+2026-02-13T17:29:02.197+09:00  INFO 45152 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T17:29:02.197+09:00  INFO 45152 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T17:29:02.198+09:00  INFO 45152 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0 where b1_0.id=?
+Hibernate: delete from batch_jobs where id=?
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0 where b1_0.enabled
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select b1_0.id from batch_jobs b1_0 where b1_0.job_key=? limit ?
+Hibernate: insert into batch_jobs (created_at,cron_expression,enabled,job_class,job_key,last_run_at,name,updated_at) values (?,?,?,?,?,?,?,?)
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0 where b1_0.enabled
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select b1_0.id from batch_jobs b1_0 where b1_0.job_key=? limit ?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0 where b1_0.id=?
+2026-02-13T17:29:03.183+09:00  INFO 45152 --- [nio-8081-exec-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=sampleJob]] launched with the following parameters: [{'requestedAt':'{value=1770971343141, type=class java.lang.Long, identifying=true}','batchJobId':'{value=1, type=class java.lang.Long, identifying=true}','triggerType':'{value=MANUAL, type=class java.lang.String, identifying=true}'}]
+2026-02-13T17:29:03.216+09:00  INFO 45152 --- [nio-8081-exec-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+Sample batch job executed
+2026-02-13T17:29:03.240+09:00  INFO 45152 --- [nio-8081-exec-1] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 23ms
+2026-02-13T17:29:03.265+09:00  INFO 45152 --- [nio-8081-exec-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=sampleJob]] completed with the following parameters: [{'requestedAt':'{value=1770971343141, type=class java.lang.Long, identifying=true}','batchJobId':'{value=1, type=class java.lang.Long, identifying=true}','triggerType':'{value=MANUAL, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 65ms
+Hibernate: update batch_jobs set cron_expression=?,enabled=?,job_class=?,job_key=?,last_run_at=?,name=?,updated_at=? where id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select b1_0.id,b1_0.created_at,b1_0.cron_expression,b1_0.enabled,b1_0.job_class,b1_0.job_key,b1_0.last_run_at,b1_0.name,b1_0.updated_at from batch_jobs b1_0
+

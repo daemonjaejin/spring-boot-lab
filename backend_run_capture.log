@@ -1,0 +1,58 @@
+﻿> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2026-02-13T16:58:18.822+09:00  INFO 42160 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.7 with PID 42160 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+2026-02-13T16:58:18.823+09:00  INFO 42160 --- [           main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2026-02-13T16:58:19.105+09:00  INFO 42160 --- [           main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 1 ms.
+2026-02-13T16:58:19.222+09:00  INFO 42160 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T16:58:19.255+09:00  INFO 42160 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2026-02-13T16:58:19.622+09:00  INFO 42160 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-02-13T16:58:19.628+09:00  INFO 42160 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T16:58:19.628+09:00  INFO 42160 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2026-02-13T16:58:19.693+09:00  INFO 42160 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-13T16:58:19.694+09:00  INFO 42160 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 847 ms
+2026-02-13T16:58:19.771+09:00  INFO 42160 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2026-02-13T16:58:19.771+09:00  INFO 42160 --- [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-02-13T16:58:19.771+09:00  INFO 42160 --- [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-02-13T16:58:19.777+09:00  INFO 42160 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T16:58:19.960+09:00  INFO 42160 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39133244
+2026-02-13T16:58:19.961+09:00  INFO 42160 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T16:58:19.979+09:00  INFO 42160 --- [           main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:13307/test (MySQL 8.0)
+2026-02-13T16:58:20.014+09:00  INFO 42160 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.015s)
+2026-02-13T16:58:20.034+09:00  INFO 42160 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `test`: 2
+2026-02-13T16:58:20.035+09:00  INFO 42160 --- [           main] o.f.core.internal.command.DbMigrate      : Schema `test` is up to date. No migration necessary.
+2026-02-13T16:58:20.083+09:00  INFO 42160 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-13T16:58:20.113+09:00  INFO 42160 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2026-02-13T16:58:20.114+09:00  INFO 42160 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-02-13T16:58:20.195+09:00  INFO 42160 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-02-13T16:58:20.270+09:00  INFO 42160 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T16:58:20.404+09:00  INFO 42160 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-02-13T16:58:20.765+09:00  INFO 42160 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-13T16:58:20.787+09:00  INFO 42160 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T16:58:21.015+09:00  INFO 42160 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2026-02-13T16:58:21.025+09:00  INFO 42160 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2026-02-13T16:58:21.039+09:00  INFO 42160 --- [           main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2026-02-13T16:58:21.042+09:00  INFO 42160 --- [           main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2026-02-13T16:58:21.102+09:00  WARN 42160 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T16:58:21.245+09:00  INFO 42160 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35a81281, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58829c2c, org.springframework.security.web.context.SecurityContextHolderFilter@7fb28ed, org.springframework.security.web.header.HeaderWriterFilter@19f9404d, org.springframework.security.web.authentication.logout.LogoutFilter@ce5a2ea, com.example.demo.security.JwtAuthenticationFilter@3958db82, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b33f7a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f541f60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64f1b2fb, org.springframework.security.web.session.SessionManagementFilter@5d2bfc9f, org.springframework.security.web.access.ExceptionTranslationFilter@304cad3a, org.springframework.security.web.access.intercept.AuthorizationFilter@2279e7c7]
+2026-02-13T16:58:21.362+09:00  INFO 42160 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-02-13T16:58:21.365+09:00  INFO 42160 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 2.762 seconds (process running for 2.959)
+2026-02-13T16:58:23.096+09:00  INFO 42160 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T16:58:23.096+09:00  INFO 42160 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T16:58:23.097+09:00  INFO 42160 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+

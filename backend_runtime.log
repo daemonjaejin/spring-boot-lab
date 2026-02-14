@@ -1,0 +1,170 @@
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2026-02-13T16:48:59.527+09:00  INFO 44656 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.7 with PID 44656 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+2026-02-13T16:48:59.528+09:00  INFO 44656 --- [           main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2026-02-13T16:48:59.804+09:00  INFO 44656 --- [           main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 1 ms.
+2026-02-13T16:48:59.918+09:00  INFO 44656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T16:48:59.954+09:00  INFO 44656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2026-02-13T16:49:00.330+09:00  INFO 44656 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-02-13T16:49:00.336+09:00  INFO 44656 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T16:49:00.336+09:00  INFO 44656 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2026-02-13T16:49:00.389+09:00  INFO 44656 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-13T16:49:00.390+09:00  INFO 44656 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 837 ms
+2026-02-13T16:49:00.468+09:00  INFO 44656 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2026-02-13T16:49:00.469+09:00  INFO 44656 --- [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-02-13T16:49:00.469+09:00  INFO 44656 --- [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-02-13T16:49:00.476+09:00  INFO 44656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T16:49:00.669+09:00  INFO 44656 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39133244
+2026-02-13T16:49:00.670+09:00  INFO 44656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T16:49:00.691+09:00  INFO 44656 --- [           main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:13307/test (MySQL 8.0)
+2026-02-13T16:49:00.741+09:00  INFO 44656 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.024s)
+2026-02-13T16:49:00.764+09:00  INFO 44656 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `test`: 2
+2026-02-13T16:49:00.765+09:00  INFO 44656 --- [           main] o.f.core.internal.command.DbMigrate      : Schema `test` is up to date. No migration necessary.
+2026-02-13T16:49:00.821+09:00  INFO 44656 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-13T16:49:00.857+09:00  INFO 44656 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2026-02-13T16:49:00.859+09:00  INFO 44656 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-02-13T16:49:00.957+09:00  INFO 44656 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-02-13T16:49:01.051+09:00  INFO 44656 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T16:49:01.194+09:00  INFO 44656 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2026-02-13T16:49:01.598+09:00  INFO 44656 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-13T16:49:01.622+09:00  INFO 44656 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T16:49:01.866+09:00  INFO 44656 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2026-02-13T16:49:01.876+09:00  INFO 44656 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2026-02-13T16:49:01.889+09:00  INFO 44656 --- [           main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2026-02-13T16:49:01.893+09:00  INFO 44656 --- [           main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2026-02-13T16:49:01.950+09:00  WARN 44656 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T16:49:02.100+09:00  INFO 44656 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69542112, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35a81281, org.springframework.security.web.context.SecurityContextHolderFilter@3b9c386d, org.springframework.security.web.header.HeaderWriterFilter@628cb8e0, org.springframework.security.web.authentication.logout.LogoutFilter@4986b0ea, com.example.demo.security.JwtAuthenticationFilter@34d0c331, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@536f389, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71b6edfb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58829c2c, org.springframework.security.web.session.SessionManagementFilter@6d7a343f, org.springframework.security.web.access.ExceptionTranslationFilter@79169472, org.springframework.security.web.access.intercept.AuthorizationFilter@751526a7]
+2026-02-13T16:49:02.233+09:00  INFO 44656 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-02-13T16:49:02.238+09:00  INFO 44656 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 2.938 seconds (process running for 3.143)
+2026-02-13T16:49:24.671+09:00  INFO 44656 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T16:49:24.671+09:00  INFO 44656 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T16:49:24.671+09:00  INFO 44656 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.id=?
+Hibernate: update members set created_at=?,name=?,password=?,role=?,updated_at=?,username=? where id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.id=?
+Hibernate: update members set created_at=?,name=?,password=?,role=?,updated_at=?,username=? where id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0 where r1_0.id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0 where r1_0.id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0 where r1_0.id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0 where r1_0.id=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at,r1_0.version from registered_apps r1_0
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+Hibernate: select m1_0.id,m1_0.created_at,m1_0.name,m1_0.password,m1_0.role,m1_0.updated_at,m1_0.username from members m1_0 where m1_0.username=?
+
+> Task :bootRun FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command 'C:\developer\java\jdk-21.0.7+6\bin\java.exe'' finished with non-zero exit value -1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.4/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 6m 51s
+4 actionable tasks: 3 executed, 1 up-to-date
