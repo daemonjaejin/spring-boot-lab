@@ -1,0 +1,34 @@
+Starting frontend setup... 
+Running npm install... 
+
+up to date, audited 52 packages in 1s
+
+9 packages are looking for funding
+  run `npm fund` for details
+
+1 critical severity vulnerability
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Running npm run dev... 
+
+> frontend@0.0.1 dev
+> next dev
+
+   ▲ Next.js 14.1.0
+   - Local:        http://localhost:3000
+
+ ✓ Ready in 2s
+ ✓ Compiled / in 381ms (425 modules)
+ ✓ Compiled /members in 286ms (658 modules)
+ ✓ Compiled in 364ms (654 modules)
+ ○ Compiling /async-test ...
+ ✓ Compiled /async-test in 2.4s (965 modules)
+ ○ Compiling /batch ...
+ ✓ Compiled /batch in 1065ms (973 modules)
+ ✓ Compiled / in 167ms (477 modules)
+ ✓ Compiled in 308ms (968 modules)
+ ✓ Compiled in 252ms (968 modules)
+^C^C

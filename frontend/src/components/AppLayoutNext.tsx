@@ -1,0 +1,66 @@
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useAuth } from "../auth/AuthContext";
+
+export default function AppLayout({ children }: { children: React.ReactNode }) {
+  const { role, username, logout } = useAuth();
+  const showBatchMenu = role !== "TESTER";
+  const router = useRouter(); 
+  // We need to ensure router is ready before relying on pathname for active highlighting,
+  // but for simple string matching it's usually fine.
+
+  const isActive = (path: string) => {
+    return router.pathname.startsWith(path) ? "nav-link active" : "nav-link";
+  };
+
+  // Prevent hydration mismatch for username if it comes from localStorage
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+      // Return a shell that matches server output or just simpler loading state
+      // to avoid hydration mismatch if username renders differently
+      return <div className="app-shell" />; 
+  }
+
+  return (
+    <div className="app-shell">
+      <header className="topbar">
+        <div className="topbar-left">
+          <h1 className="brand">Member Console</h1>
+          <nav className="nav-links">
+            <Link href="/members" className={isActive("/members")}>
+              Members
+            </Link>
+            <Link href="/apps" className={isActive("/apps")}>
+              Apps
+            </Link>
+            {showBatchMenu && (
+              <Link href="/batch" className={isActive("/batch")}>
+                Batch
+              </Link>
+            )}
+            <Link href="/async-test" className={isActive("/async-test")}>
+              Async Test
+            </Link>
+          </nav>
+        </div>
+        <div className="topbar-right">
+          <span className="identity">
+            {username ?? "unknown"} ({role ?? "UNKNOWN"})
+          </span>
+          <button className="btn secondary" onClick={logout} type="button">
+            Logout
+          </button>
+        </div>
+      </header>
+
+      <main className="content">
+        {children}
+      </main>
+    </div>
+  );
+}

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../src/auth/AuthContext';
 
 export default function ProtectedLayout({
@@ -14,19 +14,29 @@ export default function ProtectedLayout({
   const router = useRouter();
   const pathname = usePathname();
   const showBatchMenu = role !== 'TESTER';
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (!isAuthenticated) {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (mounted && !isAuthenticated) {
       router.replace('/login');
     }
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, router, mounted]);
+
+  // Prevent hydration mismatch
+  if (!mounted) {
+    return null;
+  }
 
   if (!isAuthenticated) {
     return null;
   }
 
   const isActive = (path: string) => {
-    return pathname.startsWith(path) ? 'nav-link active' : 'nav-link';
+    return pathname?.startsWith(path) ? 'nav-link active' : 'nav-link';
   };
 
   return (
@@ -46,6 +56,9 @@ export default function ProtectedLayout({
                 Batch
               </Link>
             )}
+            <Link className={isActive('/async-test')} href="/async-test">
+              Async Test
+            </Link>
           </nav>
         </div>
         <div className="topbar-right">

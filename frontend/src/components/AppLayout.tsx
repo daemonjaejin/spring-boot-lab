@@ -24,9 +24,12 @@ export default function AppLayout() {
             </NavLink>
             {showBatchMenu && (
               <NavLink className={navClassName} to="/batch">
-                Batch
+                Batch!!!
               </NavLink>
             )}
+            <NavLink className={navClassName} to="/async-test">
+              Async Test
+            </NavLink>
           </nav>
         </div>
         <div className="topbar-right">

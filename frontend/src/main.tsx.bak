@@ -11,7 +11,6 @@ import MemberDetailPage from "./pages/MemberDetailPage";
 import MembersListPage from "./pages/MembersListPage";
 import RegisteredAppDetailPage from "./pages/RegisteredAppDetailPage";
 import RegisteredAppsListPage from "./pages/RegisteredAppsListPage";
-import AsyncTestPage from "./pages/async-test";
 import "./styles.css";
 
 function HomeRedirect() {
@@ -79,7 +78,6 @@ function AppRoutes() {
               </ProtectedRoute>
             }
           />
-          <Route path="/async-test" element={<AsyncTestPage />} />
         </Route>
 
         <Route path="*" element={<Navigate replace to="/" />} />
@@ -88,13 +86,10 @@ function AppRoutes() {
   );
 }
 
-const rootElement = document.getElementById("root");
-if (rootElement) {
-  createRoot(rootElement).render(
-    <React.StrictMode>
-      <AuthProvider>
-        <AppRoutes />
-      </AuthProvider>
-    </React.StrictMode>
-  );
-}
+createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <AuthProvider>
+      <AppRoutes />
+    </AuthProvider>
+  </React.StrictMode>
+);
