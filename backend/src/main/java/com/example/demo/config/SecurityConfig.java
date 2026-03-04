@@ -1,5 +1,7 @@
 package com.example.demo.config;
 
+import com.example.demo.security.CustomAccessDeniedHandler;
+import com.example.demo.security.CustomAuthenticationEntryPoint;
 import com.example.demo.security.JwtAuthenticationFilter;
 import com.example.demo.service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
@@ -28,6 +30,8 @@ public class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final CustomUserDetailsService customUserDetailsService;
+    private final CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
+    private final CustomAccessDeniedHandler customAccessDeniedHandler;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -35,8 +39,13 @@ public class SecurityConfig {
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .csrf(AbstractHttpConfigurer::disable)
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .exceptionHandling(exception -> exception
+                .authenticationEntryPoint(customAuthenticationEntryPoint)
+                .accessDeniedHandler(customAccessDeniedHandler)
+            )
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**", "/api/async/**", "/api/flux/**", "/actuator/**", "/api/boards/**", "/api/comments/**").permitAll()
+                .requestMatchers("/api/auth/**", "/api/async/**", "/api/flux/**", "/api/ai/**", "/actuator/**", "/swagger-ui/**", "/v3/api-docs/**", "/api-docs/**", "/swagger-ui.html").permitAll()
+                .requestMatchers("/api/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
             .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);

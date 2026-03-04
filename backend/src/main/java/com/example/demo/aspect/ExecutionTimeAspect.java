@@ -7,8 +7,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Aspect
-@Component
+//@Aspect
+//@Component
 public class ExecutionTimeAspect {
 
     @Around("execution(public * com.example.demo.controller..*(..)) || @annotation(com.example.demo.annotation.LogExecutionTime)")

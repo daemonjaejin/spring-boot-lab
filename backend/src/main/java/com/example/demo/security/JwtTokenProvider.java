@@ -2,6 +2,8 @@ package com.example.demo.security;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+import io.jsonwebtoken.security.SignatureException;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -41,14 +43,31 @@ public class JwtTokenProvider {
                 .compact();
     }
 
-    public boolean validateToken(String token) {
+    public boolean validateToken(String token, HttpServletRequest request) {
         try {
-            Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token);
+            Claims claims = Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).getBody();
+            request.setAttribute("claims", claims);
             return true;
-        } catch (JwtException | IllegalArgumentException e) {
-            log.warn("Invalid JWT token: {}", e.getMessage());
-            return false;
+        } catch (ExpiredJwtException e) {
+            log.warn("Expired JWT token: {}", e.getMessage());
+            request.setAttribute("jwtException", "Expired JWT token");
+        } catch (UnsupportedJwtException e) {
+            log.warn("Unsupported JWT token: {}", e.getMessage());
+            request.setAttribute("jwtException", "Unsupported JWT token");
+        } catch (MalformedJwtException e) {
+            log.warn("Malformed JWT token: {}", e.getMessage());
+            request.setAttribute("jwtException", "Malformed JWT token");
+        } catch (SignatureException e) {
+            log.warn("Invalid JWT signature: {}", e.getMessage());
+            request.setAttribute("jwtException", "Invalid JWT signature");
+        } catch (IllegalArgumentException e) {
+            log.warn("JWT claims string is empty: {}", e.getMessage());
+            request.setAttribute("jwtException", "JWT claims string is empty");
+        } catch (Exception e) {
+            log.error("Invalid JWT token", e);
+            request.setAttribute("jwtException", "Invalid JWT token");
         }
+        return false;
     }
 
     public String getUsername(String token) {
@@ -58,5 +77,9 @@ public class JwtTokenProvider {
     public String getRole(String token) {
         Object role = Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).getBody().get("role");
         return role != null ? role.toString() : null;
+    }
+
+    public Claims getClaimsFromRequest(HttpServletRequest request) {
+        return (Claims) request.getAttribute("claims");
     }
 }

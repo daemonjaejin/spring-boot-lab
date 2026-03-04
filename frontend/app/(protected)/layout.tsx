@@ -71,6 +71,9 @@ export default function ProtectedLayout({
             <Link className={isActive('/board')} href="/board">
               Board
             </Link>
+            <Link className={isActive('/ai-chat')} href="/ai-chat">
+              AI Chat
+            </Link>
           </nav>
         </div>
         <div className="topbar-right">

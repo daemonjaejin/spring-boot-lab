@@ -1,0 +1,224 @@
+[2026-03-04 16:41:51.513] [INFO ] [http-nio-8081-exec-1] c.e.demo.aspect.ExecutionTimeAspect - [AOP] Method: BoardController.getAllBoards(..) | Execution Time: 39ms
+[2026-03-04 17:37:23.893] [INFO ] [http-nio-8081-exec-1] c.e.demo.aspect.ExecutionTimeAspect - [AOP] Method: BoardController.createBoard(..) | Execution Time: 96ms
+[2026-03-04 17:58:59.108] [INFO ] [http-nio-8081-exec-3] c.e.demo.aspect.ExecutionTimeAspect - [AOP] Method: AuthController.login(..) | Execution Time: 161ms
+[2026-03-04 18:00:21.793] [INFO ] [http-nio-8081-exec-4] c.e.demo.aspect.ExecutionTimeAspect - [AOP] Method: AuthController.login(..) | Execution Time: 223ms
+[2026-03-04 18:00:22.036] [INFO ] [http-nio-8081-exec-5] c.e.demo.aspect.ExecutionTimeAspect - [AOP] Method: AuthController.login(..) | Execution Time: 223ms
+[2026-03-04 18:00:22.278] [INFO ] [http-nio-8081-exec-6] c.e.demo.aspect.ExecutionTimeAspect - [AOP] Method: AuthController.login(..) | Execution Time: 221ms
+[2026-03-04 18:00:22.522] [INFO ] [http-nio-8081-exec-7] c.e.demo.aspect.ExecutionTimeAspect - [AOP] Method: AuthController.login(..) | Execution Time: 223ms
+[2026-03-04 20:46:09.151] [INFO ] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+[2026-03-04 20:46:09.174] [INFO ] [main] com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.7 with PID 47968 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+[2026-03-04 20:46:09.175] [INFO ] [main] com.example.demo.DemoApplication - The following 1 profile is active: "local"
+[2026-03-04 20:46:09.626] [INFO ] [main] o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 1 ms.
+[2026-03-04 20:46:09.773] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-03-04 20:46:09.866] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 7 JPA repository interfaces.
+[2026-03-04 20:46:10.255] [WARN ] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[2026-03-04 20:46:10.460] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+[2026-03-04 20:46:10.467] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2026-03-04 20:46:10.469] [INFO ] [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2026-03-04 20:46:10.469] [INFO ] [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2026-03-04 20:46:10.525] [INFO ] [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2026-03-04 20:46:10.525] [INFO ] [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1326 ms
+[2026-03-04 20:46:10.703] [INFO ] [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2026-03-04 20:46:10.738] [INFO ] [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+[2026-03-04 20:46:10.761] [INFO ] [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2026-03-04 20:46:10.911] [INFO ] [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-03-04 20:46:10.932] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2026-03-04 20:46:11.122] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23ee92df
+[2026-03-04 20:46:11.124] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2026-03-04 20:46:11.842] [INFO ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-03-04 20:46:11.899] [INFO ] [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-03-04 20:46:12.428] [INFO ] [main] o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: MYSQL
+[2026-03-04 20:46:12.690] [WARN ] [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2026-03-04 20:46:12.959] [INFO ] [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoint(s) beneath base path '/actuator'
+[2026-03-04 20:46:13.009] [INFO ] [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30e787e2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39d8240b, org.springframework.security.web.context.SecurityContextHolderFilter@2927d781, org.springframework.security.web.header.HeaderWriterFilter@41aa99fc, org.springframework.web.filter.CorsFilter@3a6732bc, org.springframework.security.web.authentication.logout.LogoutFilter@5e744b4b, com.example.demo.security.JwtAuthenticationFilter@6222a343, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a28f67a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70798698, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35b799c0, org.springframework.security.web.session.SessionManagementFilter@4431233f, org.springframework.security.web.access.ExceptionTranslationFilter@260f8704, org.springframework.security.web.access.intercept.AuthorizationFilter@2e6c69f]
+[2026-03-04 20:46:13.366] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2026-03-04 20:46:13.377] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+[2026-03-04 20:46:13.385] [INFO ] [main] com.example.demo.DemoApplication - Started DemoApplication in 4.526 seconds (process running for 4.765)
+[2026-03-04 20:50:00.099] [INFO ] [Async-Executor-1] o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=sampleJob]] launched with the following parameters: [{'requestedAt':'{value=1772625000032, type=class java.lang.Long, identifying=true}','batchJobId':'{value=1, type=class java.lang.Long, identifying=true}','triggerType':'{value=SCHEDULED, type=class java.lang.String, identifying=true}'}]
+[2026-03-04 20:50:00.100] [INFO ] [Async-Executor-2] o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=sampleJobTwo]] launched with the following parameters: [{'requestedAt':'{value=1772625000032, type=class java.lang.Long, identifying=true}','batchJobId':'{value=3, type=class java.lang.Long, identifying=true}','triggerType':'{value=SCHEDULED, type=class java.lang.String, identifying=true}'}]
+[2026-03-04 20:50:00.139] [INFO ] [Async-Executor-1] o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+[2026-03-04 20:50:00.142] [INFO ] [Async-Executor-2] o.s.batch.core.job.SimpleStepHandler - Executing step: [step1]
+[2026-03-04 20:50:00.169] [INFO ] [Async-Executor-1] o.s.batch.core.step.AbstractStep - Step: [step1] executed in 30ms
+[2026-03-04 20:50:00.170] [INFO ] [Async-Executor-2] o.s.batch.core.step.AbstractStep - Step: [step1] executed in 27ms
+[2026-03-04 20:50:00.196] [INFO ] [Async-Executor-2] o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=sampleJobTwo]] completed with the following parameters: [{'requestedAt':'{value=1772625000032, type=class java.lang.Long, identifying=true}','batchJobId':'{value=3, type=class java.lang.Long, identifying=true}','triggerType':'{value=SCHEDULED, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 79ms
+[2026-03-04 20:50:00.197] [INFO ] [Async-Executor-1] o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=sampleJob]] completed with the following parameters: [{'requestedAt':'{value=1772625000032, type=class java.lang.Long, identifying=true}','batchJobId':'{value=1, type=class java.lang.Long, identifying=true}','triggerType':'{value=SCHEDULED, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 80ms
+[2026-03-04 21:04:57.196] [INFO ] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+[2026-03-04 21:04:57.224] [INFO ] [main] com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.7 with PID 39484 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+[2026-03-04 21:04:57.224] [INFO ] [main] com.example.demo.DemoApplication - The following 1 profile is active: "local"
+[2026-03-04 21:04:57.708] [INFO ] [main] o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 2 ms.
+[2026-03-04 21:04:57.863] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-03-04 21:04:57.958] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 7 JPA repository interfaces.
+[2026-03-04 21:04:58.367] [WARN ] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[2026-03-04 21:04:58.576] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+[2026-03-04 21:04:58.582] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:04:58.584] [INFO ] [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2026-03-04 21:04:58.584] [INFO ] [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2026-03-04 21:04:58.628] [INFO ] [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2026-03-04 21:04:58.628] [INFO ] [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1375 ms
+[2026-03-04 21:04:58.816] [INFO ] [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2026-03-04 21:04:58.849] [INFO ] [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+[2026-03-04 21:04:58.868] [INFO ] [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2026-03-04 21:04:59.001] [INFO ] [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-03-04 21:04:59.017] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2026-03-04 21:04:59.203] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18301763
+[2026-03-04 21:04:59.204] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2026-03-04 21:04:59.965] [INFO ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-03-04 21:05:00.032] [INFO ] [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-03-04 21:05:00.579] [INFO ] [main] o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: MYSQL
+[2026-03-04 21:05:00.834] [WARN ] [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2026-03-04 21:05:01.108] [INFO ] [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoint(s) beneath base path '/actuator'
+[2026-03-04 21:05:01.155] [INFO ] [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bf2e21d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2703fabd, org.springframework.security.web.context.SecurityContextHolderFilter@5cbdc23b, org.springframework.security.web.header.HeaderWriterFilter@4518bffd, org.springframework.web.filter.CorsFilter@34672fb, org.springframework.security.web.authentication.logout.LogoutFilter@40c31127, com.example.demo.security.JwtAuthenticationFilter@52813ba4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d6c4c43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bba6542, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3387d45e, org.springframework.security.web.session.SessionManagementFilter@abce494, org.springframework.security.web.access.ExceptionTranslationFilter@8611b3f, org.springframework.security.web.access.intercept.AuthorizationFilter@28e9f6b8]
+[2026-03-04 21:05:01.534] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:05:01.545] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+[2026-03-04 21:05:01.554] [INFO ] [main] com.example.demo.DemoApplication - Started DemoApplication in 4.707 seconds (process running for 5.087)
+[2026-03-04 21:05:17.261] [INFO ] [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2026-03-04 21:05:17.261] [INFO ] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2026-03-04 21:05:17.263] [INFO ] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2026-03-04 21:05:22.413] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - AI Request: prompt='안녕'
+[2026-03-04 21:06:13.577] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - AI Response: content='안녕하세요! 😊'
+[2026-03-04 21:10:05.116] [INFO ] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+[2026-03-04 21:10:05.143] [INFO ] [main] com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.7 with PID 8484 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+[2026-03-04 21:10:05.144] [INFO ] [main] com.example.demo.DemoApplication - The following 1 profile is active: "local"
+[2026-03-04 21:10:05.654] [INFO ] [main] o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 2 ms.
+[2026-03-04 21:10:05.812] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-03-04 21:10:05.933] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 7 JPA repository interfaces.
+[2026-03-04 21:10:06.400] [WARN ] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[2026-03-04 21:10:06.614] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+[2026-03-04 21:10:06.621] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:10:06.622] [INFO ] [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2026-03-04 21:10:06.622] [INFO ] [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2026-03-04 21:10:06.673] [INFO ] [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2026-03-04 21:10:06.673] [INFO ] [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1498 ms
+[2026-03-04 21:10:06.895] [INFO ] [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2026-03-04 21:10:06.956] [INFO ] [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+[2026-03-04 21:10:06.982] [INFO ] [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2026-03-04 21:10:07.172] [INFO ] [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-03-04 21:10:07.196] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2026-03-04 21:10:07.403] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@445f6f73
+[2026-03-04 21:10:07.405] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2026-03-04 21:10:08.282] [INFO ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-03-04 21:10:08.355] [INFO ] [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-03-04 21:10:09.170] [INFO ] [main] o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: MYSQL
+[2026-03-04 21:10:09.572] [WARN ] [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2026-03-04 21:10:09.942] [INFO ] [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoint(s) beneath base path '/actuator'
+[2026-03-04 21:10:10.008] [INFO ] [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30e787e2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39d8240b, org.springframework.security.web.context.SecurityContextHolderFilter@12a9889e, org.springframework.security.web.header.HeaderWriterFilter@70903e7b, org.springframework.web.filter.CorsFilter@3a6732bc, org.springframework.security.web.authentication.logout.LogoutFilter@a538180, com.example.demo.security.JwtAuthenticationFilter@494e7290, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@411db18d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d4ae76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35b799c0, org.springframework.security.web.session.SessionManagementFilter@5d81bc79, org.springframework.security.web.access.ExceptionTranslationFilter@23327c53, org.springframework.security.web.access.intercept.AuthorizationFilter@2e6c69f]
+[2026-03-04 21:10:10.435] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:10:10.452] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+[2026-03-04 21:10:10.464] [INFO ] [main] com.example.demo.DemoApplication - Started DemoApplication in 5.687 seconds (process running for 5.966)
+[2026-03-04 21:11:11.012] [INFO ] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+[2026-03-04 21:11:11.037] [INFO ] [main] com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.7 with PID 48280 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+[2026-03-04 21:11:11.038] [INFO ] [main] com.example.demo.DemoApplication - The following 1 profile is active: "local"
+[2026-03-04 21:11:11.499] [INFO ] [main] o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 1 ms.
+[2026-03-04 21:11:11.649] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-03-04 21:11:11.749] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97 ms. Found 7 JPA repository interfaces.
+[2026-03-04 21:11:12.179] [WARN ] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[2026-03-04 21:11:12.399] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+[2026-03-04 21:11:12.406] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:11:12.408] [INFO ] [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2026-03-04 21:11:12.408] [INFO ] [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2026-03-04 21:11:12.456] [INFO ] [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2026-03-04 21:11:12.456] [INFO ] [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1393 ms
+[2026-03-04 21:11:12.656] [INFO ] [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2026-03-04 21:11:12.696] [INFO ] [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+[2026-03-04 21:11:12.720] [INFO ] [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2026-03-04 21:11:12.883] [INFO ] [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-03-04 21:11:12.901] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2026-03-04 21:11:13.086] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5644f664
+[2026-03-04 21:11:13.088] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2026-03-04 21:11:13.855] [INFO ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-03-04 21:11:13.928] [INFO ] [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-03-04 21:11:14.541] [INFO ] [main] o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: MYSQL
+[2026-03-04 21:11:14.823] [WARN ] [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2026-03-04 21:11:15.145] [INFO ] [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoint(s) beneath base path '/actuator'
+[2026-03-04 21:11:15.194] [INFO ] [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35b799c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3963d003, org.springframework.security.web.context.SecurityContextHolderFilter@7d24bd80, org.springframework.security.web.header.HeaderWriterFilter@30ee1a38, org.springframework.web.filter.CorsFilter@41e35358, org.springframework.security.web.authentication.logout.LogoutFilter@2919976e, com.example.demo.security.JwtAuthenticationFilter@f2e28c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70798698, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bf2e21d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42927b0a, org.springframework.security.web.session.SessionManagementFilter@12a9889e, org.springframework.security.web.access.ExceptionTranslationFilter@2afdab87, org.springframework.security.web.access.intercept.AuthorizationFilter@4817bd3]
+[2026-03-04 21:11:15.585] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:11:15.596] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+[2026-03-04 21:11:15.604] [INFO ] [main] com.example.demo.DemoApplication - Started DemoApplication in 4.885 seconds (process running for 5.125)
+[2026-03-04 21:12:02.809] [INFO ] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+[2026-03-04 21:12:02.839] [INFO ] [main] com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.7 with PID 47084 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+[2026-03-04 21:12:02.839] [INFO ] [main] com.example.demo.DemoApplication - The following 1 profile is active: "local"
+[2026-03-04 21:12:03.368] [INFO ] [main] o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 1 ms.
+[2026-03-04 21:12:03.535] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-03-04 21:12:03.642] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 7 JPA repository interfaces.
+[2026-03-04 21:12:04.085] [WARN ] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[2026-03-04 21:12:04.335] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+[2026-03-04 21:12:04.341] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:12:04.343] [INFO ] [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2026-03-04 21:12:04.344] [INFO ] [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2026-03-04 21:12:04.393] [INFO ] [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2026-03-04 21:12:04.393] [INFO ] [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1518 ms
+[2026-03-04 21:12:04.592] [INFO ] [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2026-03-04 21:12:04.647] [INFO ] [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+[2026-03-04 21:12:04.672] [INFO ] [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2026-03-04 21:12:04.845] [INFO ] [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-03-04 21:12:04.864] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2026-03-04 21:12:05.046] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a6a4595
+[2026-03-04 21:12:05.047] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2026-03-04 21:12:06.232] [INFO ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-03-04 21:12:06.330] [INFO ] [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-03-04 21:12:07.416] [INFO ] [main] o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: MYSQL
+[2026-03-04 21:12:07.904] [WARN ] [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2026-03-04 21:12:08.402] [INFO ] [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoint(s) beneath base path '/actuator'
+[2026-03-04 21:12:08.492] [INFO ] [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42927b0a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b628301, org.springframework.security.web.context.SecurityContextHolderFilter@28e9f6b8, org.springframework.security.web.header.HeaderWriterFilter@40c31127, org.springframework.web.filter.CorsFilter@6ca6a1a6, org.springframework.security.web.authentication.logout.LogoutFilter@dcdf733, com.example.demo.security.JwtAuthenticationFilter@230383a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bf2e21d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3387d45e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@378446f9, org.springframework.security.web.session.SessionManagementFilter@1fae279e, org.springframework.security.web.access.ExceptionTranslationFilter@41aa99fc, org.springframework.security.web.access.intercept.AuthorizationFilter@3a6732bc]
+[2026-03-04 21:12:09.134] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:12:09.147] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+[2026-03-04 21:12:09.154] [INFO ] [main] com.example.demo.DemoApplication - Started DemoApplication in 6.695 seconds (process running for 7.004)
+[2026-03-04 21:12:14.367] [INFO ] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2026-03-04 21:12:14.367] [INFO ] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2026-03-04 21:12:14.368] [INFO ] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2026-03-04 21:12:19.927] [INFO ] [http-nio-8081-exec-5] c.e.demo.controller.AiChatController - AI Request received: prompt='안녕'
+[2026-03-04 21:12:19.928] [INFO ] [http-nio-8081-exec-5] c.e.demo.controller.AiChatController - Calling Ollama LLM...
+[2026-03-04 21:12:22.500] [INFO ] [http-nio-8081-exec-5] c.e.demo.controller.AiChatController - AI Response received successfully.
+[2026-03-04 21:12:28.285] [INFO ] [http-nio-8081-exec-6] c.e.demo.controller.AiChatController - AI Request received: prompt='넌 이름이 뭐야?'
+[2026-03-04 21:12:28.285] [INFO ] [http-nio-8081-exec-6] c.e.demo.controller.AiChatController - Calling Ollama LLM...
+[2026-03-04 21:12:29.748] [INFO ] [http-nio-8081-exec-6] c.e.demo.controller.AiChatController - AI Response received successfully.
+[2026-03-04 21:12:36.986] [INFO ] [http-nio-8081-exec-7] c.e.demo.controller.AiChatController - AI Request received: prompt='한글로 대답해줘'
+[2026-03-04 21:12:36.987] [INFO ] [http-nio-8081-exec-7] c.e.demo.controller.AiChatController - Calling Ollama LLM...
+[2026-03-04 21:12:37.511] [INFO ] [http-nio-8081-exec-7] c.e.demo.controller.AiChatController - AI Response received successfully.
+[2026-03-04 21:12:44.026] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - AI Request received: prompt='장난해?'
+[2026-03-04 21:12:44.026] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - Calling Ollama LLM...
+[2026-03-04 21:12:45.506] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - AI Response received successfully.
+[2026-03-04 21:15:15.803] [INFO ] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+[2026-03-04 21:15:15.827] [INFO ] [main] com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.7 with PID 12576 (C:\developer\workspace\test\20260213\backend\build\classes\java\main started by c in C:\developer\workspace\test\20260213\backend)
+[2026-03-04 21:15:15.829] [INFO ] [main] com.example.demo.DemoApplication - The following 1 profile is active: "local"
+[2026-03-04 21:15:16.273] [INFO ] [main] o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 1 ms.
+[2026-03-04 21:15:16.421] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2026-03-04 21:15:16.522] [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97 ms. Found 7 JPA repository interfaces.
+[2026-03-04 21:15:16.946] [WARN ] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[2026-03-04 21:15:17.209] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+[2026-03-04 21:15:17.221] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:15:17.223] [INFO ] [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2026-03-04 21:15:17.224] [INFO ] [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2026-03-04 21:15:17.283] [INFO ] [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2026-03-04 21:15:17.283] [INFO ] [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1427 ms
+[2026-03-04 21:15:17.483] [INFO ] [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2026-03-04 21:15:17.522] [INFO ] [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+[2026-03-04 21:15:17.543] [INFO ] [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2026-03-04 21:15:17.699] [INFO ] [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2026-03-04 21:15:17.723] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2026-03-04 21:15:17.923] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63af52a6
+[2026-03-04 21:15:17.924] [INFO ] [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2026-03-04 21:15:18.770] [INFO ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2026-03-04 21:15:18.842] [INFO ] [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2026-03-04 21:15:19.458] [INFO ] [main] o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: MYSQL
+[2026-03-04 21:15:19.810] [WARN ] [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2026-03-04 21:15:20.176] [INFO ] [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoint(s) beneath base path '/actuator'
+[2026-03-04 21:15:20.254] [INFO ] [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35f011cf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f5c55a8, org.springframework.security.web.context.SecurityContextHolderFilter@4b1a7b39, org.springframework.security.web.header.HeaderWriterFilter@70798698, org.springframework.web.filter.CorsFilter@2d198533, org.springframework.security.web.authentication.logout.LogoutFilter@35b799c0, com.example.demo.security.JwtAuthenticationFilter@48bafe39, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8dbe78f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@351623d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bd4d24b, org.springframework.security.web.session.SessionManagementFilter@22e470f4, org.springframework.security.web.access.ExceptionTranslationFilter@1fae279e, org.springframework.security.web.access.intercept.AuthorizationFilter@46916d68]
+[2026-03-04 21:15:20.628] [INFO ] [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2026-03-04 21:15:20.639] [INFO ] [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+[2026-03-04 21:15:20.647] [INFO ] [main] com.example.demo.DemoApplication - Started DemoApplication in 5.142 seconds (process running for 5.393)
+[2026-03-04 21:15:25.225] [INFO ] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2026-03-04 21:15:25.225] [INFO ] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2026-03-04 21:15:25.226] [INFO ] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2026-03-04 21:15:28.363] [INFO ] [http-nio-8081-exec-5] c.e.demo.controller.AiChatController - AI Request received: prompt='안녕'
+[2026-03-04 21:15:28.363] [INFO ] [http-nio-8081-exec-5] c.e.demo.controller.AiChatController - Calling Ollama LLM with system prompt...
+[2026-03-04 21:15:29.199] [INFO ] [http-nio-8081-exec-5] c.e.demo.controller.AiChatController - AI Response received successfully.
+[2026-03-04 21:15:33.388] [INFO ] [http-nio-8081-exec-9] c.e.demo.controller.AiChatController - AI Request received: prompt='우리 제대로 얘기해보자'
+[2026-03-04 21:15:33.389] [INFO ] [http-nio-8081-exec-9] c.e.demo.controller.AiChatController - Calling Ollama LLM with system prompt...
+[2026-03-04 21:15:34.777] [INFO ] [http-nio-8081-exec-9] c.e.demo.controller.AiChatController - AI Response received successfully.
+[2026-03-04 21:15:41.499] [INFO ] [http-nio-8081-exec-7] c.e.demo.controller.AiChatController - AI Request received: prompt='넌 얼마나 똑똑해?'
+[2026-03-04 21:15:41.499] [INFO ] [http-nio-8081-exec-7] c.e.demo.controller.AiChatController - Calling Ollama LLM with system prompt...
+[2026-03-04 21:15:45.713] [INFO ] [http-nio-8081-exec-7] c.e.demo.controller.AiChatController - AI Response received successfully.
+[2026-03-04 21:15:55.002] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - AI Request received: prompt='基于 이게 뭐야?'
+[2026-03-04 21:15:55.003] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - Calling Ollama LLM with system prompt...
+[2026-03-04 21:15:57.097] [INFO ] [http-nio-8081-exec-8] c.e.demo.controller.AiChatController - AI Response received successfully.

@@ -37,4 +37,15 @@ public class AuthController {
             return ResponseEntity.status(401).body("Invalid credentials");
         }
     }
+
+    @PostMapping("/register")
+    public ResponseEntity<?> register(@RequestBody LoginRequest req) {
+        Member m = new Member();
+        m.setUsername(req.getUsername());
+        m.setPassword(passwordEncoder.encode(req.getPassword()));
+        m.setRole("MEMBER");
+        m.setName(req.getUsername());
+        memberRepository.save(m);
+        return ResponseEntity.ok("success");
+    }
 }
