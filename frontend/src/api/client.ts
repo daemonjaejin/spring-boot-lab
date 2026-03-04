@@ -18,9 +18,10 @@ client.interceptors.response.use(
   (response) => response,
   (error) => {
     const status = error?.response?.status;
-    if (status === 401) {
+    if (status === 401 || status === 403) {
       clearAuthSession();
-      if (window.location.pathname !== "/login") {
+      if (typeof window !== "undefined" && window.location.pathname !== "/login") {
+        alert("로그인이 필요한 서비스입니다.");
         window.location.replace("/login");
       }
     }

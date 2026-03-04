@@ -59,6 +59,18 @@ export default function ProtectedLayout({
             <Link className={isActive('/async-test')} href="/async-test">
               Async Test
             </Link>
+            <Link className={isActive('/flux-test')} href="/flux-test">
+              Flux Test
+            </Link>
+            <Link className={isActive('/monitor')} href="/monitor">
+              Monitor
+            </Link>
+            <Link className={isActive('/aop-test')} href="/aop-test">
+              AOP Test
+            </Link>
+            <Link className={isActive('/board')} href="/board">
+              Board
+            </Link>
           </nav>
         </div>
         <div className="topbar-right">

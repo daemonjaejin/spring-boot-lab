@@ -11,6 +11,7 @@ public class AsyncService {
 
     @Async("taskExecutor")
     public CompletableFuture<AsyncResponseDto> processAsync() {
+        System.out.println("Start async: " + Thread.currentThread().getName());
         try {
             Thread.sleep(2000); // 2초 대기
         } catch (InterruptedException e) {
