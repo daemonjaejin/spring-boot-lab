@@ -1,0 +1,5 @@
+cd test_front
+npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias "@/*" --yes
+npm install env-cmd
+npm run build:dev
+npm run dev
