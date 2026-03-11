@@ -1,7 +1,9 @@
 // middleware.ts 수정본
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
-// import type { NextRequest } from 'next/request'
+// import { NextResponse } from 'next/server'
+// import type { NextRequest } from 'next/server'
+// import type { NextRequest } from 'next/request' // 구버전
+
+import { NextResponse, type NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   // [수정] 우리가 로그인 시 저장한 이름인 'accessToken'으로 변경!

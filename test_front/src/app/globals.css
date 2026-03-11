@@ -5,6 +5,12 @@
   --foreground: #171717;
 }
 
+/* 🚩 root가 아닌 html 자체에 클래스가 붙으므로 이렇게 쓰는 게 가장 확실합니다 */
+html.dark {
+  --background: #0f172a !important;
+  --foreground: #f8fafc !important;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
