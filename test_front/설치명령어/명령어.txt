@@ -3,3 +3,19 @@ npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --
 npm install env-cmd
 npm run build:dev
 npm run dev
+git clone https://github.com/daemonjaejin/spring-boot-lab.git
+# 1. 컨테이너 백그라운드 실행
+docker compose up -d
+
+# 2. 컨테이너가 잘 떴는지 확인
+docker ps
+
+# 1. 기존 컨테이너와 볼륨(데이터)을 완전히 삭제
+docker compose down -v
+
+# 2. 로컬에 남은 mysql_data 폴더도 수동으로 지워주세요 (가장 확실함)
+rm -rf ./mysql_data
+
+# 3. 새로운 버전으로 다시 실행
+docker compose up -d
+

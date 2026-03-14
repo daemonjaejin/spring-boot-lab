@@ -1,0 +1,26 @@
+# [Backend - Java/Gradle]
+.gradle/
+build/
+bin/
+out/
+.DS_Store
+
+# [Frontend - Next.js/Node]
+test_front/node_modules/
+test_front/.next/
+test_front/out/
+test_front/.env*.local
+test_front/npm-debug.log*
+
+# [Docker Data]
+# 🚩 아까 에러 났던 범인들입니다.
+**/mysql_data/
+**/*.sock
+**/*.lock
+
+# [IDE - VS Code / IntelliJ]
+.vscode/
+.idea/
+*.iws
+*.iml
+*.ipr
