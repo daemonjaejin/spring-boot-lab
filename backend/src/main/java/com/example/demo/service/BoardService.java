@@ -1,14 +1,12 @@
 package com.example.demo.service;
 
 import com.example.demo.dto.BoardDto;
-import com.example.demo.dto.CommentDto;
 import com.example.demo.entity.Board;
 import com.example.demo.entity.Comment;
 import com.example.demo.entity.ReactionType;
 import com.example.demo.repository.BoardRepository;
 import com.example.demo.repository.BoardReactionRepository;
 import com.example.demo.repository.CommentReactionRepository;
-import com.example.demo.repository.CommentRepository; // Added this import as it might be needed for other operations, though not directly used in the provided snippet.
 import lombok.RequiredArgsConstructor;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -21,8 +19,6 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
